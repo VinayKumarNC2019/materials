@@ -104,8 +104,9 @@
   --memory 512m \
   --cpu-shares 512 \
   --cap-drop net_raw \
+  --link ch6_mariadb:mysql \
   -e WORDPRESS_DB_PASSWORD=test \
-  mariadb:5.5</pre></dd>
+  wordpress:4.1</pre></dd>
 
           <dt class="broken-example">[code - typo] Page 109</dt><dd>The device access example is missing the "run" subcommand. The command listed as: <pre>docker -it --rm \
   --device /dev/video0:/dev/video0 \
